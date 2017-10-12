@@ -13,7 +13,9 @@
 #define iPhone5_Size        CGSizeMake(320, 568)
 #define iPhone6_Size        CGSizeMake(375, 667)
 #define iPhone6Plsu_Size    CGSizeMake(414, 736)
+#define iPhoneX_Size        CGSizeMake(375, 812)
 #define iPad_Size           CGSizeMake(768, 1024)
+
 
 
 @interface GWPDeviceModel : NSObject
@@ -34,5 +36,8 @@
 
 /** iPhone6 plus、iPhone6s plus */
 + (BOOL)is_iPhone6Plus;
+
+/** iPhoneX */
++ (BOOL)is_iPhoneX;
 
 @end

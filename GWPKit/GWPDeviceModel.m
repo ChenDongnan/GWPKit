@@ -29,7 +29,9 @@
 + (BOOL)is_iPhone6Plus{
     return [self deviceSizeEqualTo:iPhone6Plsu_Size];
 }
-
++ (BOOL)is_iphoneX {
+    return [self deviceSizeEqualTo:iphoneX_Size];
+}
 + (BOOL)deviceSizeEqualTo:(CGSize)size{
     return(DeviceSize.height==size.height && DeviceSize.width==size.width) || (DeviceSize.height==size.width && DeviceSize.width==size.height);
 }
